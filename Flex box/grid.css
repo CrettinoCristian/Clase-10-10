@@ -1,0 +1,40 @@
+*{
+    font-weight: 400px;
+}
+.padre{
+    background-color: #87a2fb;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 250);
+    grid-gap: 20px;
+    grid-template-areas: 
+     "elemento2 elemento3 pepe elemento4";
+}
+
+.hijos{
+    background-color: #f92f6f;
+    border: 2px solid #080808;
+    width: 200px;
+    height: 200px;
+    
+}
+.elemento1{
+    background-color: yellow;
+    /*grid-column: 1/4;*/
+    grid-area: pepe;
+    
+}
+.alinear{
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+}
+.elemento2{
+    grid-area: elemento2;
+}
+.elemento3{
+    grid-area: elemento3;
+}
+.elemento4{
+    grid-area: elemento4;
+}
